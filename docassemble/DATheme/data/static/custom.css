@@ -26,7 +26,7 @@ a:not(:hover) {
   text-decoration-color: rgba(0, 0, 0, .1);
 }
 
-a.nav-link:not(:hover) {
+.nav-link:not(:hover) {
   color: rgba(0, 0, 0, .9);
 }
 
@@ -37,11 +37,7 @@ a.nav-link:not(:hover) {
 .btn-success,
 .btn-info,
 .btn-danger {
-  color: White;
-
-  a&:not([href]) {
-    color: White;
-  }
+  color: White !important;
 }
 
 /* Correct Border Radii */
@@ -50,8 +46,13 @@ a.nav-link:not(:hover) {
 }
 
 select.playground-select {
+  background-position: calc(100% - .35em);
   border-radius: 9999px;
-  padding: .35em .65em;
+  padding: .225em 1.35em .225em .65em;
+
+  &.bg-info {
+    color: White;
+  }
 }
 
 /* Nav Menu */
@@ -63,7 +64,9 @@ select.playground-select {
   }
 
   .nav-link {
-    color: var(--white);
+    &:not(:hover) {
+      color: var(--white);
+    }
 
     &:hover {
       color: var(--red);
