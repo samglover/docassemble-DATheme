@@ -30,8 +30,10 @@ a.nav-link:not(:hover) {
   color: rgba(0, 0, 0, .9);
 }
 
+.bg-primary,
 .btn-primary,
 .btn-secondary,
+.bg-secondary,
 .btn-success,
 .btn-info,
 .btn-danger {
@@ -46,8 +48,10 @@ select.playground-select {
 
 /* Nav Menu */
 .navbar {
-  #dapagetitle {
+  .navbar-brand,
+  .navbar-brand a:not(:hover) {
     color: var(--white);
+    text-decoration: none;
   }
 
   .nav-link {
