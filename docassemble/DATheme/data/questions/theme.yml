@@ -9,9 +9,4 @@ features:
   labels above fields: True
 ---
 mandatory: True
-code:
-  test
----
 question: This interview contains theme styles for sowords.xyz/da
-fields:
-  - Test: test
