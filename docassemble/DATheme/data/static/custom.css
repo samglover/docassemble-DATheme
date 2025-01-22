@@ -1,0 +1,56 @@
+/**
+ * From the ALThemeTemplate docs:
+ * https://assemblyline.suffolklitlab.org/docs/components/ALThemeTemplate/overview#customizing-the-logo-and-title-for-assembly-line-interviews 
+ */
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+  
+.bg-dark {
+  background-color: #67c4cf !important;
+}
+
+/**
+ * Additional Bootstrap Theme Tweaks 
+ */
+
+/* Typography */
+a:not(:hover) {
+  text-decoration-color: rgba(0, 0, 0, .1);
+}
+
+/* Nav Menu */
+.navbar {
+  #dapagetitle {
+    color: var(--white);
+  }
+
+  .nav-link {
+    color: var(--white);
+
+    &:hover {
+      color: var(--red);
+    }
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+}
+
+
+/* Layout Utilities */
+.float-end {
+  float: right;  
+}
+
+.ms-auto {
+  margin-left: auto;
+}
