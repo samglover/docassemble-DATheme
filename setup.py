@@ -44,14 +44,14 @@ def find_package_data(where='.', package='', exclude=standard_exclude, exclude_d
     return out
 
 setup(name='docassemble.DATheme',
-      version='0.1.0',
+      version='0.1.1',
       description=('A visual theme for Docassemble'),
-      long_description='# docassemble.DATheme\n\nA visual theme for Docassemble\n\n## Author\n\nSam Glover, sam@samglover.net\n\n',
+      long_description='# docassemble.DATheme\r\n\r\nA visual theme for Docassemble\r\n\r\n## Author\r\n\r\nSam Glover, sam@samglover.net\r\n\r\n',
       long_description_content_type='text/markdown',
       author='Sam Glover',
       author_email='sam@samglover.net',
       license='The MIT License (MIT)',
-      url='https://docassemble.org',
+      url='https://samglover.net',
       packages=find_namespace_packages(),
       install_requires=[],
       zip_safe=False,
