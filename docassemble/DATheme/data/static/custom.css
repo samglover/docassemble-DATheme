@@ -38,12 +38,20 @@ a.nav-link:not(:hover) {
 .btn-info,
 .btn-danger {
   color: White;
+
+  a&:not([href]) {
+    color: White;
+  }
 }
 
 /* Correct Border Radii */
-.dabadge,
+.dabadge {
+  border-radius: 9999px;  
+}
+
 select.playground-select {
   border-radius: 9999px;
+  padding: .35em .65em;
 }
 
 /* Nav Menu */
