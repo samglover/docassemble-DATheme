@@ -37,7 +37,7 @@ a:not(:hover) {
 .btn-success,
 .btn-info,
 .btn-danger {
-  color: White !important;
+  color: var(--bs-white) !important;
 }
 
 /* Correct Border Radii */
@@ -51,7 +51,7 @@ select.playground-select {
   padding: .225em 1.35em .225em .65em;
 
   &.bg-info {
-    color: White;
+    color: var(--bs-white);
   }
 }
 
@@ -59,17 +59,17 @@ select.playground-select {
 .navbar {
   .navbar-brand,
   .navbar-brand a:not(:hover) {
-    color: var(--white);
+    color: var(--bs-white);
     text-decoration: none;
   }
 
   .nav-link {
     &:not(:hover) {
-      color: var(--white);
+      color: var(--bs-white);
     }
 
     &:hover {
-      color: var(--red);
+      color: var(--bs-red);
     }
   }
   
