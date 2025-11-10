@@ -1,3 +1,52 @@
+/* Header */
+.navbar.bg-dark {
+  background-color: var(--bs-cyan) !important;
+}
+
+.al-title {
+  color: var(--white);
+}
+
+.nav-link {
+  color: var(--bs-nav-link-color);
+
+  &:hover {
+    color: var(--bs-nav-link-hover-color);
+  }
+}
+
+
+/* Navigation */
+
+.nav-pills .nav-link.active, {
+  border-radius: var(--bs-btn-border-radius);
+  color: revert;
+  background-color: rgba(var(--bs-primary-rgb), .1);
+}
+
+.nav-link:not(:hover) {
+  color: rgba(0, 0, 0, .9);
+}
+
+.navbar {
+  .navbar-brand,
+  .navbar-brand a:not(:hover) {
+    color: var(--bs-white);
+    text-decoration: none;
+  }
+
+  .nav-link {
+    &:not(:hover) {
+      color: var(--bs-white);
+    }
+
+    &:hover {
+      color: var(--bs-red);
+    }
+  }
+}
+
+
 /*
  * From the Docassemble docs:
  * https://docassemble.org/docs/config.html#bootstrap%20theme
@@ -23,7 +72,7 @@ i.da-chat-inactive {
   color: #4f4f4f;
 
   &:hover {
-    color: #5f5f5f;
+    color: var(--bs-gray-100);
   }
 }
 
@@ -44,7 +93,7 @@ i.da-chat-inactive {
 }
   
 .bg-dark {
-  background-color: #67c4cf !important;
+  background-color: var(--bs-cyan) !important;
 }
 
 
@@ -57,10 +106,6 @@ a:not(:hover) {
   text-decoration-color: rgba(0, 0, 0, .1);
 }
 
-.nav-link:not(:hover) {
-  color: rgba(0, 0, 0, .9);
-}
-
 .bg-primary,
 .btn-primary,
 .btn-secondary,
@@ -71,50 +116,14 @@ a:not(:hover) {
   color: var(--bs-white) !important;
 }
 
-/* Correct Border Radii */
-.btn,
-.dabadge {
-  border-radius: 9999px;  
+.btn.focus,
+.btn:focus {
+    box-shadow: 0 0 0 2px rgba(21, 40, 75, .25);
 }
 
-select.playground-select {
-  background-position: calc(100% - .35em);
-  border-radius: 9999px;
-  padding: .1625em 1.35em .1625em .65em;
 
-  &.bg-info {
-    color: var(--bs-white);
-  }
-}
+/* datatype: file */
 
-/* Nav Menu */
-.navbar {
-  .navbar-brand,
-  .navbar-brand a:not(:hover) {
-    color: var(--bs-white);
-    text-decoration: none;
-  }
-
-  .nav-link {
-    &:not(:hover) {
-      color: var(--bs-white);
-    }
-
-    &:hover {
-      color: var(--bs-red);
-    }
-  }
-  
-  .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-  }
-}
-
-/* Layout Utilities */
-.float-end {
-  float: right;  
-}
-
-.ms-auto {
-  margin-left: auto;
+.input-group > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+  border-radius: 0;
 }

@@ -3,13 +3,8 @@ metadata:
   description: A visual theme for interviews hosted on sowords.xyz/da
 ---
 features:
-  bootstrap theme: bootstrap.css
+  bootstrap theme: bootstrap-theme.css
   css: custom.css
   hide standard menu: True
   labels above fields: True
 ---
-mandatory: True
-question: This interview contains theme styles for sowords.xyz/da
-fields:
-  - test: test
-  - test 2: test_2

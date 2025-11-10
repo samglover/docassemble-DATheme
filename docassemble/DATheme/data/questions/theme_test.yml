@@ -1,0 +1,62 @@
+---
+include:
+  - theme.yml
+---
+features:
+  navigation: True
+  progress bar: True
+  question help button: True
+---
+metadata:
+  title: |
+    LIT Lab theme test
+---
+sections:
+  - Introduction
+  - About you:
+    - Contact info
+    - Demographics
+  - Preferences
+  - Conclusion
+---
+### Interview order ###
+mandatory: True
+code:
+  text_field
+---
+question: Theme test
+fields:
+  - Text field: text_field
+  - no label: no_label
+  - Textarea: textarea
+    input type: area
+  - Label above textarea: label_above_textarea
+    input type: area
+    label above field: True
+  - Date field: date_field
+    datatype: date
+  - Checkboxes: checkboxes
+    choices:
+      - Choice 1
+      - Choice 2
+      - Choice 3
+    datatype: checkboxes
+  - Radio buttons: radio
+    datatype: yesnoradio
+  - Dropdown: dropdown
+    choices:
+      - Choice 1
+      - Choice 2
+      - Choice 3
+    input type: dropdown
+  - File upload: file_upload
+    datatype: file
+  - Range: range
+    datatype: range
+    min: 1
+    max: 10
+  - Currency: currency
+    datatype: currency
+section: About you
+help: True
+---
